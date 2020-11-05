@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landerz</title>
+    <script src="https://kit.fontawesome.com/4bbd79f669.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <script src="./components/nav.js"></script>
+    <script src="./components/card.js"></script>
+    <script src="./components/testimonials.js"></script>
+    <script src="./javascript/index.js"></script>
+</head>
+
+<body>
+    <nav-component />
+    <section class="home p-24 grid">
+        <div class="md:p-24 z-40">
+            <h1 class="title">Grow Your Business Faster</h1>
+            <p class="content break-words py-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Proin eu pulvinar dui, et rutrum tellus.
+                Maecenas eu pharetra arcu, volutpat accumsan sem.</p>
+            <button class="btn main text-white rounded-full p-3 text-lg">Get Started</button>
+        </div>
+        <img class="home-image z-30 p-6" src="./assets/images/landing_1.png"
+            alt="Girl seated on a puff with a checklist on a laptop">
+    </section>
+    <section class="features grid p-10">
+        <h1 class="subtitle py-4">Features</h1>
+        <div class="card-container grid gap-2">
+            <card-component title="Business Consulting" icon="sync"></card-component>
+            <card-component title="Market Analysis" icon="store"></card-component>
+            <card-component title="User Monitoring" icon="shopping-basket"></card-component>
+            <card-component title="Insurance Consulting" icon="redo"></card-component>
+            <card-component title="Customer Satisfied" icon="smile"></card-component>
+            <card-component title="Plug & Play" icon="plug"></card-component>
+        </div>
+    </section>
+    <section class="prototypes grid p-24">
+        <img class="prot-image z-30 p-6" src="./assets/images/do_ui_kit_download_cta_floating_devices-2x.png"
+            alt="Multiple Screenshots">
+        <div class="md:p-24 z-40">
+            <h1 class="title">Create interactive prototypes</h1>
+            <p class="content break-words py-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Proin eu pulvinar dui, et rutrum tellus.
+                Maecenas eu pharetra arcu, volutpat accumsan sem.</p>
+            <ui class="list-none">
+                <li class="py-3 flex justify-items-center gap-3">
+                    <i class="fas fa-check text-green-500 text-2xl"></i>
+                    Adipisci excepturi aliquam
+                </li>
+                <li class="py-3 flex justify-items-center gap-3">
+                    <i class="fas fa-check text-green-500 text-2xl"></i>
+                    Deleniti labore reiciendis
+                </li>
+            </ui>
+            <div class="contact grid rounded shadow-lg p-3 mt-4 border">
+                <div class="flex items-center p-2 gap-y-3">
+                    <img class="w-10 h-10 rounded-full mr-4" src="https://randomuser.me/api/portraits/women/17.jpg"
+                        alt="Avatar">
+                    <div class="text-sm">
+                        <p class="text-gray-900 leading-none text-xl font-bold">Amalia G.</p>
+                        <p class="text-gray-600 text-lg">Co-Founder, XYZ Inc.</p>
+                    </div>
+                </div>
+                <p class="italic text-gray-500 text-lg p-4">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin eu pulvinar dui, et rutrum tellus?"
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="about grid p-24">
+        <h1 class="subtitle center-title py-4">About Us</h1>
+        <img class="about-image z-30 rounded shadow-lg" src="./assets/images/about_1.jpg" alt="Multiple Screenshots">
+        <div class="md:p-24 z-40">
+            <h1 class="title">Create interactive prototypes</h1>
+            <p class="content break-words py-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Proin eu pulvinar dui, et rutrum tellus.
+                Maecenas eu pharetra arcu, volutpat accumsan sem.</p>
+            <button class="btn main text-white rounded-full p-3 text-lg">Learn More</button>
+        </div>
+    </section>
+
+    <section class="testimonials grid p-24">
+        <h1 class="subtitle center-title py-4">Testimonials</h1> 
+        <testimonials-component quantity="5" auto="true"></testimonials-component>
+        
+    </section>
+
+    <section class="touch grid p-10">
+        <h1 class="subtitle center-title py-4">Get In Touch</h1>
+        <div class="bg-white grid justify-center p-16 center-title">
+            <form class="w-full max-w-lg">
+                <h2 class="pb-6">Contact Form</h2>
+                <div class="flex flex-wrap  mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-first-name">
+                            First Name
+                        </label>
+                        <input
+                            class="appearance-none block w-full  text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            id="grid-first-name" type="text" placeholder="Camilo">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-last-name">
+                            Last Name
+                        </label>
+                        <input
+                            class="appearance-none block w-full  text-gray-700 border  rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="grid-last-name" type="text" placeholder="Romero">
+                    </div>
+                </div>
+                <div class="flex flex-wrap  mb-6">
+                    <div class="w-full px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-email">
+                            Email
+                        </label>
+                        <input
+                            class="appearance-none block w-full  text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="grid-email" type="email" placeholder="example@domain.com">
+                    </div>
+                </div>
+                <div class="flex flex-wrap  mb-6">
+                    <div class="w-full px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-subject">
+                            Subject
+                        </label>
+                        <input
+                            class="appearance-none block w-full  text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="grid-subject" type="text">
+                    </div>
+                </div>
+                <div class="flex flex-wrap  mb-6">
+                    <div class="w-full px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-message">
+                            Message
+                        </label>
+                        <textarea
+                            class="appearance-none block w-full  text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="grid-message" placeholder="Write your notes or questions here..." rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap  mb-6">
+                    <div class="w-full px-3">
+                        <button class="btn main text-white rounded-full p-3 text-lg">Send Message</button>
+                    </div>
+                </div>
+            
+            </form>
+        </div>
+    </section>
+
+    <footer class="grid p-20">
+        <p class="center-title pt-10 text-gray-500 text-xl">Copyright ©2019 All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>
